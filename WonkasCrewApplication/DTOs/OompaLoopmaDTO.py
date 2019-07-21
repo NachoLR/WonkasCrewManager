@@ -6,7 +6,7 @@ class OompaLoompaDTO(object):
     OompaLoompaDTO class: Contains basic info of OompaLoompas. Only use as Data Transfer Object
 
     """
-
+    Id = None
     Name = None
     Age = None
     Job = None
@@ -14,9 +14,11 @@ class OompaLoompaDTO(object):
     Weight = None
     Description = None
 
-    ###########################    CONSTRUCTOR  ###########################
+    # ====================================
+    #         *** CONSTRUCTOR ***
+    # ====================================
 
-    def __init__(self, name, age, job, height, weight, description):
+    def __init__(self, id=None, name=None, age=None, job=None, height=None, weight=None, description=None):
         """
 
         :param name: string
@@ -26,6 +28,7 @@ class OompaLoompaDTO(object):
         :param weight: float
         :param description: string
         """
+        self.Id = id
         self.Name = name
         self.Age = age
         self.Job = job
@@ -34,7 +37,24 @@ class OompaLoompaDTO(object):
         self.Description = description
 
 
-    ###########################    PUBLIC METHODS  ###########################
+
+    # ====================================
+    #       *** PUBLIC METHODS ***
+    # ====================================
+
+    def SetId(self, id):
+        """
+        :param id: int
+        :
+        """
+        self.Id = id
+
+    def GetId(self):
+        """
+        :return: int
+        """
+        return self.Id
+
 
     def SetName(self, name):
         """
@@ -77,13 +97,13 @@ class OompaLoompaDTO(object):
 
     def SetHeight(self, height):
         """
-        :param height: float
+        :param height: int
         """
         self.Height = height
 
     def GetHeight(self):
         """
-        :return: Float
+        :return: int
         """
         return  self.Height
 
@@ -91,24 +111,24 @@ class OompaLoompaDTO(object):
 
     def SetWeight(self, weight):
         """
-        :param weight: float
+        :param weight: inr
         """
         self.Weight = weight
 
     def GetWeight(self):
         """
-        :return: float
+        :return: int
         """
         return self.Weight
 
 
-    def SetName(self, description):
+    def SetDescription(self, description):
         """
         :param description: string
         """
         self.Description = description
 
-    def GetName(self):
+    def GetDescription(self):
         """
         :return: string
         """
