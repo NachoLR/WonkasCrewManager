@@ -3,16 +3,16 @@
 
 class DataValidator(object):
 
+    """
+        This class validates data types and try to parse if necesary
+    """
+
     # ====================================
     #         *** CONSTRUCTOR ***
     # ====================================
 
     def __init__(self):
         pass
-
-    # =====================================
-    #       *** PRIVATE METHODS ***
-    # =====================================
 
     # ====================================
     #       *** PUBLIC METHODS ***
@@ -24,7 +24,7 @@ class DataValidator(object):
             if isinstance(data_str, str):
                 return data_str
             else:
-                return str(data_str).encode('utf-8')
+                return str(data_str)
 
         except Exception as e:
             raise e
