@@ -99,7 +99,7 @@ class DBManager(object):
         if id is not None:
             query_result = c.execute(sql, (id,))
             for result in query_result.fetchall():
-                return result[0]
+                return result
         else:
             query_result = c.execute(sql,)
             result_dict = []

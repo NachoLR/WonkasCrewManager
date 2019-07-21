@@ -22,7 +22,7 @@ class DataValidator(object):
     def ValidateString(self,data_str):
         try:
             if isinstance(data_str, str):
-                return data_str
+                return data_str.replace("\"", "")
             else:
                 return str(data_str)
 
@@ -35,7 +35,7 @@ class DataValidator(object):
             if isinstance(data_int, int):
                 return data_int
             else:
-                return str(data_int)
+                return int(data_int)
         except Exception as e:
             raise e
 
