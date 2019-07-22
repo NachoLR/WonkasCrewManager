@@ -60,7 +60,7 @@ http://127.0.0.1:5000/WonkaCrew
 ```
 #####What params do you need?
 ######If you like a list of all your Oompa Loompas only make a resquest without params and you recive a list of they.
-######Else, if you like a request about one, only hace to add her id employee number and the system returns all about him or her.
+######Else, if you like a request about one, only hace to add her id employee number and the system returns all about she or he.
 
 
 ###You need update information one ompa Loompa?
