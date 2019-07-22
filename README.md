@@ -36,7 +36,7 @@ python3  WonkasCrewManager.py
 
 ####Instructions to manage your Oompa Loompas:
  
- Make requests on:  ``http://127.0.0.1:5000/WonkaCrew `` or  ``http://localhost:5000/WonkaCrew `` 
+ Make requests on:  ``http://0.0.0.0:5000/WonkaCrew `` or  ``http://localhost:5000/WonkaCrew `` 
 
  
  
@@ -44,7 +44,7 @@ python3  WonkasCrewManager.py
 
 Make a POST request 
 ```
-http://127.0.0.1:5000/WonkaCrew 
+http://0.0.0.0:5000//WonkaCrew 
 ```
 
 #####What paramas do you need?
@@ -56,7 +56,7 @@ http://127.0.0.1:5000/WonkaCrew
 ###Make querys about your stored Oompa Loompas
 Make a GET request 
 ```
-http://127.0.0.1:5000/WonkaCrew 
+http://0.0.0.0:5000/WonkaCrew 
 ```
 #####What params do you need?
 ######If you like a list of all your Oompa Loompas only make a resquest without params and you recive a list of they.
@@ -67,7 +67,7 @@ http://127.0.0.1:5000/WonkaCrew
 
 Make a PUT request 
 ```
-hhttp://127.0.0.1:5000/WonkaCrew 
+http://0.0.0.0:5000/WonkaCrew 
 ```
 
 ###### Make a PUT resquest with the id employee and the params what you like modify
