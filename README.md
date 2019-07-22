@@ -20,6 +20,9 @@ Do not worry if you are not Willy Wonka, you should also use this application. W
  
  2- [Flask '1.0.2'](http://flask.pocoo.org/) - Flask is a microframework for Python 
  
+### Prerequisites if you want to use Docker
+Only have to be installed Docker in your local marchine and follow Docker execution steps
+
 
 #Deploy and run
 
